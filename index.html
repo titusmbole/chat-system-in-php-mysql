@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etalk Main | chat</title>
+<link href='css/styles.css' rel='stylesheet'>
+<link rel="stylesheet"  href="libs/vendor/icofont/icofont.min.css"/>
+<link rel="stylesheet"  href="libs/vendor/boxicons/css/boxicons.min.css"/>
+<style>
+    .alert_box{
+    width: 30%;
+    height: 5vh;
+    background: #000;
+    color: #fff;
+    /*margin: 5% auto;*/
+    top: 5%;
+    left: 40%;
+    z-index: 9999;
+    position: fixed;
+    padding: 8px 0px 8px 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    border-radius: 7px;
+
+
+}
+.alert_box i{
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+</style>
+</head>
+<body>
+   <div class="alert_box">
+       <i class="bx bx-check"></i>
+       Massage send
+   </div>
+
+
+
+
+    <header class="index-topper">
+       <span id="logo">E~talkie</span>
+       <span id="more-info">Lets Talk</span>
+    </header>
+   <section class="container">
+<div class="image-1">
+ <img src="images/features-3.png" alt="Image ">
+</div>
+<div class="more-texts">
+    <h1>Experience communication Now</h1>
+    <p>The default virtual pointing devices for older guests is the traditional PS/2
+mouse. If set to USB tablet, VirtualBox reports to the virtual machine that a USB tablet
+device is present and communicates mouse events to the virtual machine through this
+device. The third setting is a USB Multi-Touch Tablet which is suited for recent Windows
+guests.
+Using the virtual USB tablet has the advantage that movements are reported in absolute
+coordinates (instead of as relative position changes), which allows VirtualBox to translate
+mouse events over the VM window into tablet events without having to “capture” the
+mouse in the guest as described in chapter 1</p>
+
+
+<div class="login">
+    <div class="login-header">Login</div>
+    <div class="login-cont">
+     <form action="login.php" class="login_form" method="post">
+         <label for="Username">Username</label><br>
+         <input type="text" name="username" id="username" placeholder="Enter Username" required><br>
+         <label for="password">Password</label><br>
+         <input type="password" name="pass" id="pass" placeholder="Enter password" required><br><br>
+         <button type="submit" id="loginbtn">Login</button>
+     </form>
+<hr>
+<div class="bottom-staffs">
+    <p><a href="#">Forgot password?</a></p>
+    <p><button type="button" id="create">Create Account</button></p>
+</div>
+    </div>
+</div>
+</div>
+   </section>
+   <div class="wrapper">
+       <div class="register-modal">
+           <button id="close" type="button">&times;</button>
+           <div class="register">
+    <div class="login-header">Register Account Here</div>
+    <div class="login-cont register-cont">
+     <form action="register.php" class="register_form" method="post">
+         <label for="Username">Name</label><br>
+         <input type="text" name="name" id="name" placeholder="Enter Name" required><br>
+         <label for="Email">Email</label><br>
+         <input type="email" name="email" id="email" placeholder="Enter Email" required><br>
+         <label for="Username">Username</label><br>
+         <input type="text" name="username" id="user" placeholder="Enter Username" required><br>
+         <label for="password">Password</label><br>
+         <input type="password" name="pass" id="password1" placeholder="Enter password" required><br>
+         <label for="password">Re-Enter Password</label><br>
+         <input type="password" name="pass1" id="password2" placeholder="Enter confirm password" required><br>
+         <br>
+         <button type="submit" id="registerbtn">Regster</button>
+     </form>
+    </div>
+</div>
+
+</div>
+   </div>
+    <!--Scripts side-->
+    <script src="libs/vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
